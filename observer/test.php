@@ -10,4 +10,5 @@ $log=new ActionLogObserver();
 $sms=new sendSmsObserver();
 $subject->attach($log);
 $subject->attach($sms);
+$subject->detach($log);
 $subject->notify();

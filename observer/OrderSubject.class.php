@@ -12,9 +12,10 @@ class OrderSubject implements Subject{
     }
     public function detach($observer){
         $index=array_search($observer,$this->observers);
-        if($index===FALSE || array_key_exists($index,$this->observers)){
+        if($index===FALSE || !array_key_exists($index,$this->observers)){
             return FALSE;
         }
+        unset($this->observers[$index]);
         return TRUE;
     }
     public function notify(){
