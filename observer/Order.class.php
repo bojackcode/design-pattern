@@ -1,4 +1,5 @@
 <?php
+//订单类 主要记录订单详情，为观察者类提供信息
 class Order{
     private $id;
     private $userId;
