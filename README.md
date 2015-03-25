@@ -1,2 +1,3 @@
 # design-pattern
-PHP design patterns simple example source code
+这些代码都是设计模式中的小示例，更多详情请看liangbopirates.github.io
+These codes are all small example of the design patterns, more details please see liangbopirates.github.io
